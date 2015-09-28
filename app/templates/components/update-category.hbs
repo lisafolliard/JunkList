@@ -1,0 +1,15 @@
+{{#if updateCategoryForm}}
+  <h4>Update Category</h4>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          {{input value=category.name id="name"}}
+        </div>
+
+        <button class="btn btn-success" {{action 'update' category}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button class="btn btn-xs btn-primary" {{action 'updateCategoryForm'}}>Update</button>
+{{/if}}

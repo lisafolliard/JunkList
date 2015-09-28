@@ -1,3 +1,4 @@
 <li>{{category.name}}
-<button class="btn btn-xs btn-danger" {{action 'delete' category}}>Delete</button>
+  {{update-category category=category update="update"}}
+  <button class="btn btn-xs btn-danger" {{action 'delete' category}}>Delete</button>
 </li>
