@@ -22,6 +22,16 @@ export default Ember.Route.extend({
       });
       category.save();
       this.transitionTo('category', params.category.id);
+    },
+
+    saveListing(params) {
+      var newListing = this.store.createRecord('listing', params);
+      var category = params.category;
+      category.get('listings').addObject(newListing);
+      newListing.save().then(function() {
+        return category.save();
+      });
+      this.transitionTo('category', params.category);
     }
   }
 });
