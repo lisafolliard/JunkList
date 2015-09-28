@@ -4,7 +4,7 @@ Find some things to buy!
 
 <ul>
   {{#each model as |category|}}
-    {{category-tile category=category}}
+    <li>{{#linkTo 'category' category.id}}{{category.name}}{{/linkTo}}</li>
   {{/each}}
 </ul>
 

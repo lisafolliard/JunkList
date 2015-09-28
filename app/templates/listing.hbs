@@ -1,0 +1,20 @@
+<div text-align="left">
+  {{#linkTo 'index'}}Home{{/linkTo}}
+  <br>
+  {{#linkTo 'category' model.category.id}}Back{{/linkTo}}
+</div>
+<!-- {{update-listing listing=model update="update" destroyListing="destroyListing"}}
+<button class="btn btn-xs btn-danger" {{action 'delete' model}}>Delete</button> -->
+<center>
+  <em>Posted on: {{model.date_added}}</em>
+</center>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{model.title}} - ${{model.price}} ({{model.location}})</h3>
+  </div>
+  <div class="panel-body">
+    <center><p>{{model.image}}</p></center>
+    <p>{{model.description}}</p>
+  </div>
+  <div class="panel-footer">Contact me at: {{model.contact_info}}</div>
+</div>

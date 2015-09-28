@@ -1,2 +1,2 @@
-<li><h3><small>{{listing.date_added}}</small> {{listing.title}} - {{listing.price}} ({{listing.location}})</h3>
+<li><h4><small>{{listing.date_added}}</small>{{#linkTo 'listing' listing.id}} {{listing.title}}{{/linkTo}} - ${{listing.price}} ({{listing.location}})</h4>
 </li>
