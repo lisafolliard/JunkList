@@ -1,4 +1,4 @@
-<li>{{category.name}}
+<li>{{#linkTo 'category' category.id}}{{category.name}}{{/linkTo}}
   {{update-category category=category update="update"}}
   <button class="btn btn-xs btn-danger" {{action 'delete' category}}>Delete</button>
 </li>
