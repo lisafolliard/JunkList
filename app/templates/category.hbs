@@ -1,4 +1,6 @@
 <div text-align="left">
   {{#linkTo 'index'}}Home{{/linkTo}}
 </div>
+{{update-category category=model update="update" destroyCategory="destroyCategory"}}
+<button class="btn btn-xs btn-danger" {{action 'delete' model}}>Delete</button>
 <h2>Below are listings for {{model.name}}:</h2>
