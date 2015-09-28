@@ -7,6 +7,14 @@ export default Ember.Route.extend({
   },
 
   actions: {
+    delete(listing) {
+      if (confirm('Are you sure you want to delete this listing?')) {
+        var category = listing.category;
+        listing.destroyRecord();
+        this.transitionTo('category', category.category_id);
+      }
+    },
+
     update(listing, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
