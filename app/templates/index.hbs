@@ -1,13 +1,11 @@
-<div class="container fluid">
-  <h1>Craigslist</h1>
+<h1>LisasList</h1>
 
-  Find some things to buy!
+Find some things to buy!
 
-  <ul>
-    {{#each model as |category|}}
-      {{category-tile category=category update="update" destroyCategory="destroyCategory"}}
-    {{/each}}
-  </ul>
+<ul>
+  {{#each model as |category|}}
+    {{category-tile category=category update="update" destroyCategory="destroyCategory"}}
+  {{/each}}
+</ul>
 
-  {{new-category save2='save3'}}
-</div>
+{{new-category save2='save3'}}
