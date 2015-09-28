@@ -3,8 +3,6 @@
   <br>
   {{#linkTo 'category' model.category.id}}Back{{/linkTo}}
 </div>
-<!-- {{update-listing listing=model update="update" destroyListing="destroyListing"}}
-<button class="btn btn-xs btn-danger" {{action 'delete' model}}>Delete</button> -->
 <center>
   <em>Posted on: {{model.date_added}}</em>
 </center>
@@ -18,3 +16,7 @@
   </div>
   <div class="panel-footer">Contact me at: {{model.contact_info}}</div>
 </div>
+{{update-listing listing=model update="update"}}
+<!-- <button class="btn btn-xs btn-danger" {{action 'delete' model}}>Delete</button> -->
+
+<!-- destroyListing="destroyListing" -->
