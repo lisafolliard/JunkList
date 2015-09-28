@@ -1,3 +1,9 @@
 <h1>Craigslist</h1>
 
-Find some things to buy and sell!
+Find some things to buy!
+
+<ul>
+  {{#each model as |category|}}
+    {{category-tile category=category destroyCategory="destroyCategory"}}
+  {{/each}}
+</ul>

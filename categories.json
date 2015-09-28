@@ -1,4 +1,10 @@
 { "categories": [{
   "name": "furniture"
+  }, {
+  "name": "bikes"
+  }, {
+  "name": "garden tools"
+  }, {
+  "name": "kites"
   }]
 }
