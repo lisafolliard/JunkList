@@ -5,3 +5,31 @@ li {
 .container {
   margin-top: 55px;
 }
+
+.logo_navbar {
+  height: 45px;
+  width: 60px;
+  padding: 0px;
+  margin-top: -12px;
+}
+
+.home_logo {
+  margin-top: -42px;
+}
+
+.home-container {
+  margin-top: -26px;
+}
+
+.category-buttons {
+  margin-top: -42px;
+}
+
+h4 small-black {
+  color: black;
+  font-size: 80%;
+}
+
+.listing-back-link {
+  margin-top: -42px;
+}

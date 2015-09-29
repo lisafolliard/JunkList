@@ -1,11 +1,16 @@
-{{update-category category=model update="update" destroyCategory="destroyCategory"}}
-<button class="btn btn-xs btn-danger" {{action 'delete' model}}>Delete Category</button>
-<h2>Below are listings for {{model.name}}:</h2>
+<div class="category-buttons">
+  {{update-category category=model update="update" destroyCategory="destroyCategory"}}
+  <button class="btn btn-xs btn-danger" {{action 'delete' model}}>Delete Category</button>
+</div>
+<br>
+<div class="container-fluid">
+  <h3>Below are listings for {{model.name}}:</h3>
 
-<ul>
-  {{#each model.listings as |listing|}}
-    {{listing-tile listing=listing}}
-  {{/each}}
-</ul>
-
-{{new-listing saveListing="saveListing" category=model}}
+  <ul>
+    {{#each model.listings as |listing|}}
+      {{listing-tile listing=listing}}
+    {{/each}}
+  </ul>
+  <br>
+  {{new-listing saveListing="saveListing" category=model}}
+</div>

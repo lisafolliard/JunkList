@@ -1,13 +1,13 @@
-<div class="container">
-  <center>
-    <img src="/img/junklist_logo.png" height='300px' width='300px'>
-  </center>
+<center>
+  <img class="home_logo" src="/img/junklist_logo.png" height= 179px width= 250px>
+</center>
+<div class="home-container">
+  <h3>Categories:</h3>
+  <ul>
+    {{#each model as |category|}}
+      <li>{{#linkTo 'category' category.id}}{{category.name}}{{/linkTo}}</li>
+    {{/each}}
+  </ul>
+
+  {{new-category save2='save3'}}
 </div>
-
-<ul>
-  {{#each model as |category|}}
-    <li>{{#linkTo 'category' category.id}}{{category.name}}{{/linkTo}}</li>
-  {{/each}}
-</ul>
-
-{{new-category save2='save3'}}
