@@ -1,5 +1,5 @@
 {{#if addNewCategory}}
-  <h1>New Category</h1>
+  <h4>New Category</h4>
     <div>
       <form>
         <div class="form-group">
@@ -7,9 +7,9 @@
           {{input value=name id="name" class="form-control"}}
         </div>
 
-        <button class="btn btn-success"{{action 'save1'}}>Save</button>
+        <button class="btn btn-success btn-sm"{{action 'save1'}}>Save</button>
       </form>
     </div>
 {{else}}
-    <button class="btn btn-info"{{action 'categoryFormShow'}}>New Category</button>
+    <button class="btn btn-info btn-sm"{{action 'categoryFormShow'}}>New Category</button>
 {{/if}}
