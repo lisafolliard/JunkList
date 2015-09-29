@@ -1,5 +1,5 @@
 {{#if addNewListing}}
-  <h1>New Listing</h1>
+  <h4>New Listing</h4>
     <div>
       <form>
         <div class="form-group">
@@ -35,9 +35,9 @@
           {{textarea value=contact_info id="contact_info" class="form-control"}}
         </div>
 
-        <button class="btn btn-success"{{action 'saveListing'}}>Save</button>
+        <button class="btn btn-success btn-sm"{{action 'saveListing'}}>Save</button>
       </form>
     </div>
 {{else}}
-    <button class="btn btn-info"{{action 'listingFormShow'}}>New Listing</button>
+    <button class="btn btn-info btn-sm"{{action 'listingFormShow'}}>New Listing</button>
 {{/if}}
