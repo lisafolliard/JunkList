@@ -9,6 +9,9 @@ export default Ember.Route.extend({
   actions: {
     delete(category) {
       if (confirm('Are you sure you want to delete this category?')) {
+        category.get('listings').forEach(function(listing) {
+          listing.destroyRecord();
+        });
         category.destroyRecord();
         this.transitionTo('index');
       }
