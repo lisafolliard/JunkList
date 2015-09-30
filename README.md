@@ -2,7 +2,7 @@
 
 #### Version 1.0, 29 September 2015
 
-A Craigslist-style Ember application. Allows a user to add, view, edit and update categories and their listings. When category is clicked, users can view all associated listings.When an individual listing is clicked, users can view details about the listing including price, location and image.
+This application allows a user to add, view, edit and update categories and their listings. When a category is clicked, users can view all associated listings. When an individual listing is clicked, users can view details about the listing including price, location and image.
 
 #### By Lisa Folliard and Alexa Zeazas
 
