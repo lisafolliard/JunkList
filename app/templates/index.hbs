@@ -1,13 +1,30 @@
 <center>
-  <img class="home_logo" src="/img/junklist_logo.png" height= 179px width= 250px>
+  <img class="home_logo" src="/img/logo2.png" height= 179px width= 250px>
 </center>
+
+<p>Get rid of your junk and make a couple bucks!</p>
+
 <div class="home-container">
   <h3>Categories:</h3>
   <ul>
     {{#each model as |category|}}
-      <li>{{#linkTo 'category' category.id}}{{category.name}}{{/linkTo}}</li>
+      <span><span class="glyphicon-class glyphicon glyphicon-chevron-right"></span>{{#linkTo 'category' category.id}}{{category.name}}{{/linkTo}}</span>
     {{/each}}
   </ul>
+
+  <!-- <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Categories:</h3>
+    </div>
+    <div class="panel-body">
+      <ul>
+        {{#each model as |category|}}
+          <li>{{#linkTo 'category' category.id}}{{category.name}}{{/linkTo}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div> -->
+
 
   {{new-category save2='save3'}}
 </div>
