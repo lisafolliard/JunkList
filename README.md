@@ -2,7 +2,7 @@
 
 #### Version 1.0, 29 September 2015
 
-This application allows users to add, view, update and delete categories and their listings. When a category is clicked, users can view all associated listings. When an individual listing is clicked, users can view details about the listing including price, location and image.
+A Craigslist-style application that allows users to add categories and listings. When a category is clicked, users can view all associated listings. When an individual listing is clicked, users can view details about the listing including price, location and image.
 
 #### By Lisa Folliard and Alexa Zeazas
 
