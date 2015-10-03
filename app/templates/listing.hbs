@@ -1,10 +1,9 @@
 <div class="listing-back-link" text-align="left">
   {{#linkTo 'category' model.category.id}}Back{{/linkTo}}
 </div>
-<center>
-  <em>Posted on: {{model.date_added}}</em>
-</center>
-<div class="panel panel-info">
+  <center><em>Posted on: {{model.date_added}}</em></center>
+<br>
+<div class="panel panel-default">
   <div class="panel-heading">
     <h3 class="panel-title">{{model.title}} - ${{model.price}} ({{model.location}})</h3>
   </div>
@@ -14,5 +13,8 @@
   </div>
   <div class="panel-footer">Contact me at: {{model.contact_info}}</div>
 </div>
-{{update-listing listing=model update="update" destroyListing="destroyListing"}}
-<button class="btn btn-xs btn-danger" {{action 'delete' model}}>Delete Listing</button>
+
+<div class='listingbuttons'>
+  {{update-listing listing=model update="update" destroyListing="destroyListing"}}
+  <!-- <button class="btn btn-xs btn-danger" {{action 'delete' model}}>Delete Listing</button> -->
+</div>
