@@ -12,13 +12,6 @@ li {
   list-style-type: none;
 }
 
-/*.logo_navbar {
-  height: 45px;
-  width: 60px;
-  padding: 0px;
-  margin-top: -12px;
-}*/
-
 .home_logo {
   margin-top: -42px;
 }
@@ -89,4 +82,10 @@ span {
   width: 450px;
   margin: auto;
   align: center;
+}
+
+.center {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
 }

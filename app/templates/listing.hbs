@@ -3,18 +3,21 @@
 </div>
   <center><em>Posted on: {{model.date_added}}</em></center>
 <br>
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">{{model.title}} - ${{model.price}} ({{model.location}})</h3>
-  </div>
-  <div class="panel-body">
-    <center><img src= {{model.image}}></center>
-    <p>{{model.description}}</p>
-  </div>
-  <div class="panel-footer">Contact me at: {{model.contact_info}}</div>
-</div>
 
-<div class='listingbuttons'>
-  {{update-listing listing=model update="update" destroyListing="destroyListing"}}
-  <!-- <button class="btn btn-xs btn-danger" {{action 'delete' model}}>Delete Listing</button> -->
+<div class='container'>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{model.title}} - ${{model.price}} ({{model.location}})</h3>
+    </div>
+    <div class="panel-body">
+      <center><img src= {{model.image}}></center>
+      <p>{{model.description}}</p>
+    </div>
+    <div class="panel-footer">Contact me at: {{model.contact_info}}</div>
+  </div>
+
+  <div class='listingbuttons'>
+    {{update-listing listing=model update="update" destroyListing="destroyListing"}}
+    <!-- <button class="btn btn-xs btn-danger" {{action 'delete' model}}>Delete Listing</button> -->
+  </div>
 </div>
